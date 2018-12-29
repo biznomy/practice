@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="/static/js/getrequest.js"></script>
+  <script src="/static/js/postrequest.js"></script>
+</head>
+<style type="text/css">
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container input[type=text] {
+    border: 1px solid #ccc;  
+  }
+.search-container input[type=button] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+   font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container {
+  float: right;
+  margin-left: : 100%;
+  margin-top: 0px;
+
+
+}
+
+ .search-container input[type=button]:hover {
+  background: #lightblue;
+}
+
+
+</style>
+<body>
+<div class="container1" style="margin-left: 50px;">
+	<div class="row" >
+		<div class="col-sm-3 col-md-3 col-lg-3" style="background-color: lightblue; margin-top: 70px;">
+			<h3 style="font-size: 30px; font-style: initial;">REST API with MongoDB</h3>
+			<form id="userForm" action="index.html" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="firstname">Firstname:</label>
+					<input type="text" class="form-control" name="firstname" id="firstname" value="" placeholder="First Name">
+					<span class="error" id="fn"></span>
+				</div>
+				<div class="form-group">
+					<label for="lasttname">Lastname:</label>
+					<input type="text" class="form-control" name="lastname" id="lastname" value="" placeholder="Last Name">
+					<span class="error" id="ln"></span>
+				</div>
+				<div class="form-group">
+					<label for="lasttname">Email Id:</label>
+					<input type="text" class="form-control" name="email" id="email" value="" placeholder="Email Id">
+					<span class="error" id="emailID"></span>
+				</div>
+				<div class="form-group">
+					<label for="gender">Gender</label>
+					<br/>
+					<label class="radio-inline">
+						<input type="radio" id="gender" name="gender" value="male">Male
+					</label>
+					<label class="radio-inline">
+						<input type="radio" id="gender" name="gender" value="Female">Female
+					</label>
+					<br/>
+					<span class="error" id="sex"></span>
+				</div>
+				<div class="form-group">
+					<label for="contact">Contact No:</label>
+					<input type="text" class="form-control" name="contact" id="contact" value="" placeholder="Contact No">
+					<span class="error" id="contactno"></span>
+				</div>
+				<div class="form-group">
+					<label for="subject"> Subject </label>
+					<br/>
+					<label class="checkbox-inline">
+						<input type="checkbox" id ="subject" name="subject" value="Java">Java
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id ="subject" name="subject" value="Dot Net">Dot Net
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id ="subject" name="subject" value="DataBase">Database
+					</label>
+					<br/>
+					<span class="error" id="sub"></span>
+				</div>
+				<div class="form-group">
+					<label for="contact">Image :</label>
+					<input type="file" class="form-control" name="image" value="" id="image">
+					<br/>
+					<span class="error" id="imageID"></span>
+				</div>
+				<div>
+					<button type="button" class="btn btn-success" style="margin-left:30px;" id="Submit">Submit</button>
+					<button id="allUsers" type="button" class="btn btn-warning" style="margin-left: 40px;">Get Users</button>
+					<div id="postResultDiv"></div>
+				</div>
+			</form>	
+
+			<div id ="GetUSer"></div>
+		<br/>
+		<div>
+		</div>
+	</div>
+				
+
+			<div class="col-sm-8 col-md-8 col-lg-8">
+
+				<div class="search-container" style="margin-top: 50px;">	
+				    
+				      <input type="text" placeholder="Search.." name="search" id="txtSearch" size="35">
+				      <input type="button" name="search" class="btn btn-secondary" id="search" value="Search">
+				    
+				  </div>
+
+				<div class="nav-btn-container" style="margin-top: 70px;">
+					<button class="prev-btn">previus</button>
+					<button class="next-btn">next</button>
+				</div>
+				
+
+				<div id="getResultDiv" style="margin-top: 70px;">
+					
+				</div>
+				<div class="nav-btn-container" style="margin-top: 105px; ">
+					<button class="prev-btn">previus</button>
+					<button class="next-btn">next</button>
+				</div>
+
+			</div>
+
+			
+
+</div>
+</body>
+</html>

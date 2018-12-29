@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+<form>
+	<input type="checkbox" name="subject" value="java">java
+	<input type="checkbox" name="subject" value="net">.net
+	<input type="checkbox" name="subject" value="database">database
+	<button type="button" id="submit">submit</button>
+</form>
+<script type="text/javascript">
+	$(document).ready(function (){
+
+		$("#submit").click(function(){
+
+			var json =''
+
+			var data =[];
+			$('input[name="subject"]:checked').each(function(i){
+
+					data[i]=$(this).val();
+
+					console.log("values is " +data[i]);
+			});
+
+		});
+	});
+</script>
+</body>
+</html>
