@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -46,7 +47,7 @@
 
 </style>
 <body>
-<div class="container1" style="margin-left: 50px;">
+<div class="container1" style="margin-left: 45px;">
 	<div class="row" >
 		<div class="col-sm-3 col-md-3 col-lg-3" style="background-color: lightblue; margin-top: 70px;">
 			<h3 style="font-size: 30px; font-style: initial;">REST API with MongoDB</h3>
@@ -83,17 +84,17 @@
 					<input type="text" class="form-control" name="contact" id="contact" value="" placeholder="Contact No">
 					<span class="error" id="contactno"></span>
 				</div>
-				<div class="form-group">
-					<label for="subject"> Subject </label>
+				<div class="form-group">	
+					<label for="subject">Subject</labsel>
 					<br/>
 					<label class="checkbox-inline">
-						<input type="checkbox" id ="subject" name="subject" value="Java">Java
+						<input type="checkbox" name="subject" value="Java">Java
 					</label>
 					<label class="checkbox-inline">
-						<input type="checkbox" id ="subject" name="subject" value="Dot Net">Dot Net
+						<input type="checkbox" name="subject" value="Dot Net">Dot Net
 					</label>
 					<label class="checkbox-inline">
-						<input type="checkbox" id ="subject" name="subject" value="DataBase">Database
+						<input type="checkbox" name="subject" value="DataBase">Database
 					</label>
 					<br/>
 					<span class="error" id="sub"></span>
@@ -105,8 +106,8 @@
 					<span class="error" id="imageID"></span>
 				</div>
 				<div>
-					<button type="button" class="btn btn-success" style="margin-left:30px;" id="Submit">Submit</button>
-					<button id="allUsers" type="button" class="btn btn-warning" style="margin-left: 40px;">Get Users</button>
+					<button type="button" class="btn btn-primary" style="margin-left:120px;" id="Submit">Submit</button>
+					<!-- <button id="getCount" type="button" class="btn btn-warning" style="margin-left: 40px;">Get Users</button> -->
 					<div id="postResultDiv"></div>
 				</div>
 			</form>	
@@ -136,7 +137,7 @@
 				<div id="getResultDiv" style="margin-top: 70px;">
 					
 				</div>
-				<div class="nav-btn-container" style="margin-top: 105px; ">
+				<div class="nav-btn-container" style="margin-top: 99px; ">
 					<button class="prev-btn">previus</button>
 					<button class="next-btn">next</button>
 				</div>
